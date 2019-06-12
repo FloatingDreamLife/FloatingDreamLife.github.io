@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SIGN IN </title>
+<style type="text/css">
+	#box{
+		position:absolute;
+		margin-left:40%;
+		margin-top:5%;
+		margin-text:center;
+	}
+	#div{
+		margin-left:90%
+	}
+</style>
+<script type="text/javascript">
+function check(){
+	var text=document.getElementById("name").value;
+	var text1=document.getElementById("password").value;
+	//var text2=document.getElementById("check").value;
+	if(text==""){
+		alert("用户名不能为空");
+		return false;
+	}
+	if(text1==""){
+		alert("密码不能为空");
+		return false;
+	}
+	/*if(text2==""){
+		alert("验证码不能为空");
+		return false;
+	}*/
+		return true;
+}
+</script>
+</head>
+<body style="background:url(p6.jpg)">
+
+<div id="div">
+	<p ><a href="tea_login.html">教师版<<<</a></p>
+</div>
+<div id="box">
+
+<h2 style="margin-text:center">Please SIGNIN</h2>
+
+<form>
+
+学号&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="id" placeholder="学号" required=""><br><br>
+姓名&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name" placeholder="姓名" required=""><br><br>
+密码&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password"  name="password" placeholder="Password" required=""><br><br>
+验证码&nbsp;&nbsp;<input type="text" name="check">&nbsp;&nbsp;<img src="verifyCode.jsp"><br><br>
+
+<input type="submit" value="登陆" onclick="return check()" style="background:#00ff99;margin-left:35%">&nbsp;&nbsp;&nbsp;
+<a href="register.html">注册<<<</a>
+
+</form>
+</div>
+<div style="margin-top:50%;margin-left:45%">
+<footer>
+<a href="#">@wangzhenggan.com</a>
+</footer>
+</div>
+
+</body>
+</html>
